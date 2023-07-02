@@ -157,8 +157,18 @@ function kiloToGram() {
     let kiloInput = document.getElementById("kilo");
     let resultadoDiv = document.getElementById("resultadoG");
   
-    let  kilogramo = parseFloat(kiloInput.value);
+    let kilogramo = parseFloat(kiloInput.value);
     let gramo = kilogramo * 1000;
   
     resultadoDiv.textContent = kilogramo + " Kilogramos equivale a " + gramo + " Gramos.";
+}
+
+function meterToCentimeter() {
+    let metroInput = document.getElementById("metro");
+    let resultadoDiv = document.getElementById("resultadoC");
+  
+    let metro = parseFloat(metroInput.value);
+    let centimetro = metro * 100;
+  
+    resultadoDiv.textContent = metro + " Metros equivale a " + centimetro + " Centímetros.";
 }
