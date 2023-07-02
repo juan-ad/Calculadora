@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+</head>
+<bod>
+    <div>
+        <h1>Funcionalidad Temperatura</h1>
+        <form>
+            <label for="celsius">Grados Celsius:</label>
+            <input type="number" id="celsius" name="celsius" step="0.1">
+            <button type="button" onclick="celsiusToFahrenheit()">Convertir</button>
+        </form>
+        <br>
+        <div id="resultadoF"></div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Funcionalidad Presión</h1>
+        <form>
+            <label for="pascal">Pascales:</label>
+            <input type="number" id="pascal" name="pascal" step="0.1">
+            <button type="button" onclick="pascalToBar()">Convertir</button>
+        </form>
+        <br>
+        <div id="resultadoB"></div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Funcionalidad Masa</h1>
+        <form>
+            <label for="kilo">Kilos:</label>
+            <input type="number" id="kilo" name="kilo" step="0.1">
+            <button type="button" onclick="kiloToGram()">Convertir</button>
+        </form>
+        <br>
+        <div id="resultadoG"></div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Funcionalidad Longitud</h1>
+        <form>
+            <label for="metro">Metros:</label>
+            <input type="number" id="metro" name="metro" step="0.1">
+            <button type="button" onclick="meterToCentimeter()">Convertir</button>
+        </form>
+        <br>
+        <div id="resultadoC"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

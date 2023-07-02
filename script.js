@@ -133,4 +133,42 @@ function myFunction_set(val) {
   
 }
 
+function celsiusToFahrenheit() {
+    let celsiusInput = document.getElementById("celsius");
+    let resultadoDiv = document.getElementById("resultadoF");
 
+    let celsius = parseFloat(celsiusInput.value);
+    let fahrenheit = (celsius * 9/5) + 32;
+
+    resultadoDiv.textContent = celsius + " grados Celsius equivale a " + fahrenheit + " grados Fahrenheit.";
+}
+
+function pascalToBar() {
+    let pascalInput = document.getElementById("pascal");
+    let resultadoDiv = document.getElementById("resultadoB");
+  
+    let pascal = parseFloat(pascalInput.value);
+    let bar = pascal / 100000;
+  
+    resultadoDiv.textContent = pascal + " Pascales equivale a " + bar + " Bares.";
+} 
+
+function kiloToGram() {
+    let kiloInput = document.getElementById("kilo");
+    let resultadoDiv = document.getElementById("resultadoG");
+  
+    let kilogramo = parseFloat(kiloInput.value);
+    let gramo = kilogramo * 1000;
+  
+    resultadoDiv.textContent = kilogramo + " Kilogramos equivale a " + gramo + " Gramos.";
+}
+
+function meterToCentimeter() {
+    let metroInput = document.getElementById("metro");
+    let resultadoDiv = document.getElementById("resultadoC");
+  
+    let metro = parseFloat(metroInput.value);
+    let centimetro = metro * 100;
+  
+    resultadoDiv.textContent = metro + " Metros equivale a " + centimetro + " Centímetros.";
+}
