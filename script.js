@@ -133,4 +133,14 @@ function myFunction_set(val) {
   
 }
 
+function celsiusToFahrenheit() {
+    let celsiusInput = document.getElementById("celsius");
+    let resultadoDiv = document.getElementById("resultadoF");
+
+    let celsius = parseFloat(celsiusInput.value);
+    let fahrenheit = (celsius * 9/5) + 32;
+
+    resultadoDiv.textContent = celsius + " grados Celsius equivale a " + fahrenheit + " grados Fahrenheit.";
+}
+
 
