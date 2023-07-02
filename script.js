@@ -143,4 +143,13 @@ function celsiusToFahrenheit() {
     resultadoDiv.textContent = celsius + " grados Celsius equivale a " + fahrenheit + " grados Fahrenheit.";
 }
 
+function pascalToBar() {
+    var pascalInput = document.getElementById("pascal");
+    var resultadoDiv = document.getElementById("resultadoB");
+  
+    var pascal = parseFloat(pascalInput.value);
+    var bar = pascal / 100000;
+  
+    resultadoDiv.textContent = pascal + " Pascales equivale a " + bar + " Bares.";
+} 
 
