@@ -22,7 +22,7 @@
     <div>
         <h1>Funcionalidad Presión</h1>
         <form>
-            <label for="celsius">Pascales:</label>
+            <label for="pascal">Pascales:</label>
             <input type="number" id="pascal" name="pascal" step="0.1">
             <button type="button" onclick="pascalToBar()">Convertir</button>
         </form>
@@ -31,7 +31,17 @@
         </div>
     </div>
 
-
+    <div>
+        <h1>Funcionalidad Masa</h1>
+        <form>
+            <label for="kilo">Kilos:</label>
+            <input type="number" id="kilo" name="kilo" step="0.1">
+            <button type="button" onclick="kiloToGram()">Convertir</button>
+        </form>
+        <br>
+        <div id="resultadoG"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

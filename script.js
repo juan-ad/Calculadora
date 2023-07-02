@@ -144,12 +144,21 @@ function celsiusToFahrenheit() {
 }
 
 function pascalToBar() {
-    var pascalInput = document.getElementById("pascal");
-    var resultadoDiv = document.getElementById("resultadoB");
+    let pascalInput = document.getElementById("pascal");
+    let resultadoDiv = document.getElementById("resultadoB");
   
-    var pascal = parseFloat(pascalInput.value);
-    var bar = pascal / 100000;
+    let pascal = parseFloat(pascalInput.value);
+    let bar = pascal / 100000;
   
     resultadoDiv.textContent = pascal + " Pascales equivale a " + bar + " Bares.";
 } 
 
+function kiloToGram() {
+    let kiloInput = document.getElementById("kilo");
+    let resultadoDiv = document.getElementById("resultadoG");
+  
+    let  kilogramo = parseFloat(kiloInput.value);
+    let gramo = kilogramo * 1000;
+  
+    resultadoDiv.textContent = kilogramo + " Kilogramos equivale a " + gramo + " Gramos.";
+}
